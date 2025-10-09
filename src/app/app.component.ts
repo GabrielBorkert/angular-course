@@ -17,6 +17,6 @@ export class AppComponent {
   selectedUser: string = '';
 
   onSelectUser(id: string){
-      this.selectedUser = DUMMY_USERS.find(e => e.id == id)?.name!;
+      this.selectedUser = this.users.find(e => e.id == id)?.name!;
   }
 }
